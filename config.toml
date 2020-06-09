@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = ""
+baseURL = "/"
 languageCode = "fr"
 title = "Growth Hacking Experiments"
 theme = "liva-hugo"
