@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+  <meta charset="utf-8">
+  <title>Growth Hacking Experiments</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Automatiser la création de titres et de méta-descriptions à l&#39;aide du NLU/NLP sous Python &amp; Js">
+  <meta name="author" content="Mikael Monjour">
+  <meta name="generator" content="Hugo 0.71.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="images/favicon.png " type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href=""><img class="img-fluid"
+          src="images/logo.png" alt="Growth Hacking Experiments"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/groups/growthhaking/"><i class="ti-facebook"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/MikaelMonjour/"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/GrowtHackingExperiments"><i class="ti-github"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/mikaelmonjour/"><i class="ti-linkedin"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href=""><img class="img-fluid"
+            src="images/logo.png" alt="Growth Hacking Experiments"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="blog">Blog</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="contact">Contact</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Je recherche...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/seo"
+          class="text-primary">S e o</a>
+        
+        <h2>SEO : Automatiser la création de titres et de méta-descriptions</h2>
+        <div class="mb-3 post-meta">
+          <span>By Mikael Monjour</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>29 April 2020</span>
+          
+        </div>
+        
+        <img src="images/featured-post/post-2.jpg" class="img-fluid w-100 mb-4" alt="SEO : Automatiser la création de titres et de méta-descriptions">
+        
+        <div class="content mb-5">
+          <p><strong>L&rsquo;article développe sous python et javascript une solution d&rsquo;automatisation de
+synthèse de texte en prenant en compte des dernieres solutions NLU/NLP.</strong></p>
+<p><em>Le but étant d&rsquo;étudier le CTR d&rsquo;une méta-description créée
+automatiquement vs une méta description optimisée humainement.</em></p>
+<p><img src="../../images/other/man-sur-ordinateur.jpg" alt="image"></p>
+<p>En ces temps difficiles, il est plus important que jamais d&rsquo;optimiser
+son temps de travail en dépensant le moins de ressources possible.</p>
+<p>Une tâche peu prisée et souvent négligée par les SEO est la rédaction de
+titres et de méta descriptions convaincantes.</p>
+<p>En particulier lorsque le
+site compte des milliers ou des millions de pages.</p>
+<p>Il est difficile de faire l'effort quand on ne sait pas si la
+récompense en vaudra la peine.</p>
+<p>Dans cette rubrique, vous allez apprendre à utiliser les dernières
+nouveautés en matière de NLU / NLP pour produire automatiquement des
+titres et des méta descriptions optimisées.</p>
+<p>Cette tactique d&rsquo;automatisation passionnante, nous allons l&rsquo;aborder de
+manière pratique sur de Google Sheets.</p>
+<p>Nous apprendrons à mettre en œuvre cette fonctionnalité avec un minimum
+de code Python et JavaScript.</p>
+<p><img src="../../images/other/titres-et-metadescriptions1.jpg" alt="image"></p>
+<h3 id="voici-notre-méthodologie">Voici notre méthodologie:</h3>
+<ol>
+<li>
+<p>Nous allons mettre en œuvre et évaluer quelques modèles récents de synthétisation de texte dans <a href="https://colab.research.google.com/">Google Colab</a></p>
+</li>
+<li>
+<p>Nous allons nous servir d&rsquo;un des modèles à partir d'une fonction Google Cloud que nous pouvons facilement appeler depuis Apps Script et Google Sheets</p>
+</li>
+<li>
+<p>Nous scraperons le contenu des pages directement à partir de Google Sheets et le résumerons grâce à notre fonction personnalisée</p>
+</li>
+<li>
+<p>Nous déploierons nos titres et méta descriptions générés pour les tester dans Cloudflare en utilisant RankSense</p>
+</li>
+<li>
+<p>Nous créerons une autre fonction Google Cloud pour déclencher l &lsquo;indexation automatique dans Bing</p>
+</li>
+</ol>
+<hr>
+<h2 id="présentation-de-la-librairie-hugging-face-transformers">Présentation de la librairie &ldquo;Hugging Face Transformers&rdquo;</h2>
+<p><a href="https://huggingface.co/transformers/">Hugging Face Transformers</a> est une
+bibliothèque populaire parmi les chercheurs en IA.</p>
+<p>Elle fournit une interface unifiée et simple à utiliser pour les dernières recherches sur le langage naturel.</p>
+<p>Il pas très important de savoir que cette librairie ait été codée à l'aide de <a href="https://www.tensorflow.org/">Tensorflow</a>
+(Google&rsquo;s Deep Learning framework) ou
+<a href="https://pytorch.org/">Pytorch</a> (Facebook&rsquo;s framework).</p>
+<p>Bien que la bibliothèque transformers offre un code plus simple, elle n&rsquo;est pas aussi facile à utiliser pour les utilisateurs finaux que <a href="https://uber.github.io/ludwig/">Ludwig</a>.</p>
+<p>Ce point a changé récemment avec l&rsquo;introduction de <a href="https://huggingface.co/transformers/main_classes/pipelines.html">transformers pipelines</a>.</p>
+<p>Les pipelines encapsulent de nombreux cas d&rsquo;utilisation courante que l’on peut retrouver en NLP. Le tout avec un code minimal.</p>
+<p>Ils offrent également une grande flexibilité dans l'utilisation du modèle sous-jacent.</p>
+<p>En plusieurs étapes nous établirons des &ldquo;transformer pipelines&rdquo;, pratiques et qui contiennent dernières nouveautés NLP.</p>
+<p>Nous emprunterons un peu de code aux exemples présentés sur <a href="https://github.com/huggingface/transformers/blob/master/notebooks/03-pipelines.ipynb">ce
+notebook</a>.</p>
+<h3 id="bart-facebook"><strong>BART Facebook</strong></h3>
+<p>Lors de l'annonce du projet BART, Mike Lewis, chercheur sur Facebook, a fait état de leur capacité de synthétisation de texte.</p>
+<p>Qui sont à vrai dire, vraiment impressionnantes !</p>
+<!-- raw HTML omitted -->
+<blockquote>
+<p>Nous sommes ravis de partager notre travail sur BART, une méthode de pré-formation des modèles seq2seq par denoising .</p>
+</blockquote>
+<blockquote>
+<p>BART surpasse les travaux antérieurs sur un ensemble de tâches de génération (résumé/dialogue/assurance qualité), tout en obtenant des performances similaires à celles de RoBERTa sur SQuAD/GLUE</p>
+</blockquote>
+<blockquote>
+<p>J'ai trouvé la performance de synthèse étonnamment bonne</p>
+</blockquote>
+<blockquote>
+<p>BART semble en effet être capable de combiner des informations provenant de l'ensemble d'un document avec des connaissances de fond pour produire des résumés très pertinents. Voici quelques exemples typiques :</p>
+</blockquote>
+<p>Voyons maintenant à quel point il est facile de reproduire les résultats
+de leur travail à l'aide de transformers pipelines.</p>
+<p>Tout d'abord, installons la bibliothèque dans un nouveau Google Colab.</p>
+<p>Veillez à sélectionner le temps d'exécution du GPU.</p>
+<pre><code>colab$ !pip install transformers
+</code></pre><p>Ensuite, ajoutons à cela le code du pipeline.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  <span style="color:#080;font-weight:bold">from</span> <span style="color:#0e84b5;font-weight:bold">transformers</span> <span style="color:#080;font-weight:bold">import</span> pipeline
+  <span style="color:#888"># utiliser Bart dans pytorch</span>
+  bart_summarizer <span style="color:#333">=</span> pipeline(<span style="background-color:#fff0f0">&#34;summarization&#34;</span>)
+
+</code></pre></div><p>Voici l'exemple de texte que nous allons résumer.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python3" data-lang="python3">TEXT_TO_SUMMARIZE <span style="color:#333">=</span> <span style="background-color:#fff0f0">&#34;&#34;&#34; 
+</span><span style="background-color:#fff0f0">New York (CNN)When Liana Barrientos was 23 years old, she got married in Westchester County, New York. 
+</span><span style="background-color:#fff0f0">A year later, she got married again in Westchester County, but to a different man and without divorcing her first husband. 
+</span><span style="background-color:#fff0f0">Only 18 days after that marriage, she got hitched yet again. Then, Barrientos declared &#34;I do&#34; five more times, sometimes only within two weeks of each other. 
+</span><span style="background-color:#fff0f0">In 2010, she married once more, this time in the Bronx. In an application for a marriage license, she stated it was her &#34;first and only&#34; marriage. 
+</span><span style="background-color:#fff0f0">Barrientos, now 39, is facing two criminal counts of &#34;offering a false instrument for filing in the first degree,&#34; referring to her false statements on the 
+</span><span style="background-color:#fff0f0">2010 marriage license application, according to court documents. 
+</span><span style="background-color:#fff0f0">Prosecutors said the marriages were part of an immigration scam. 
+</span><span style="background-color:#fff0f0">On Friday, she pleaded not guilty at State Supreme Court in the Bronx, according to her attorney, Christopher Wright, who declined to comment further. 
+</span><span style="background-color:#fff0f0">After leaving court, Barrientos was arrested and charged with theft of service and criminal trespass for allegedly sneaking into the New York subway through an emergency exit, said Detective 
+</span><span style="background-color:#fff0f0">Annette Markowski, a police spokeswoman. In total, Barrientos has been married 10 times, with nine of her marriages occurring between 1999 and 2002. 
+</span><span style="background-color:#fff0f0">All occurred either in Westchester County, Long Island, New Jersey or the Bronx. She is believed to still be married to four men, and at one time, she was married to eight men at once, prosecutors say. 
+</span><span style="background-color:#fff0f0">Prosecutors said the immigration scam involved some of her husbands, who filed for permanent residence status shortly after the marriages. 
+</span><span style="background-color:#fff0f0">Any divorces happened only after such filings were approved. It was unclear whether any of the men will be prosecuted. 
+</span><span style="background-color:#fff0f0">The case was referred to the Bronx District Attorney</span><span style="color:#666;background-color:#fff0f0;font-weight:bold">\&#39;</span><span style="background-color:#fff0f0">s Office by Immigration and Customs Enforcement and the Department of Homeland Security</span><span style="color:#666;background-color:#fff0f0;font-weight:bold">\&#39;</span><span style="background-color:#fff0f0">s 
+</span><span style="background-color:#fff0f0">Investigation Division. Seven of the men are from so-called &#34;red-flagged&#34; countries, including Egypt, Turkey, Georgia, Pakistan and Mali. 
+</span><span style="background-color:#fff0f0">Her eighth husband, Rashid Rajput, was deported in 2006 to his native Pakistan after an investigation by the Joint Terrorism Task Force. 
+</span><span style="background-color:#fff0f0">If convicted, Barrientos faces up to four years in prison. Her next court appearance is scheduled for May 18.
+</span><span style="background-color:#fff0f0">&#34;&#34;&#34;</span>
+</code></pre></div><p>Voici le code pour synthétiser et le résumé qui en résulte :</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">summary <span style="color:#333">=</span> bart_summarizer(TEXT_TO_SUMMARIZE, min_length<span style="color:#333">=</span><span style="color:#00d;font-weight:bold">50</span>, max_length<span style="color:#333">=</span><span style="color:#00d;font-weight:bold">250</span>)
+
+<span style="color:#080;font-weight:bold">print</span>(summary)
+</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#888">#Output: </span>
+[
+  {
+    <span style="background-color:#fff0f0">&#39;summary_text&#39;</span>: <span style="background-color:#fff0f0">&#39;Liana Barrientos has been married    10 times, sometimes within two weeks of each other. Prosecutors say the marriages were part of an immigration scam. She is believed to still be married to four men, and at one time, she was married to eight at once.&#39;</span>
+  }
+]
+</code></pre></div><p>[!] J&rsquo;ai précisé que le résumé généré ne devait pas comporter moins de 50 caractères et au maximum 250.</p>
+<p>Ceci est très utile pour contrôler le type de synthèse que vous souhaitez effectuer : titres ou méta descriptions.
+Maintenant, regardez la qualité du résumé généré, et nous n&rsquo;avons tapé que quelques lignes de code Python. Super cool!</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="background-color:#fff0f0">&#39;Lana Barrientos has been married 10 times, sometimes within two weeks of each other. Prosecutors say the marriages were part of an immigration scam. She is believed to still be married to four men, and at one time, she was married to eight at once.&#39;</span>
+</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-weight:bold">print</span>(<span style="color:#007020">len</span>(summary[<span style="color:#00d;font-weight:bold">0</span>][<span style="background-color:#fff0f0">&#34;summary_text&#34;</span>]))
+</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#888">#Output: 249</span>
+</code></pre></div><h3 id="let5-de-google"><strong>LeT5 de Google</strong></h3>
+<p>Un autre modèle de référence dans le domaine est le <em>Text-to-Text Transfer Transformer</em>, ou T5.</p>
+<p>L'une des réalisations impressionnantes de ce model est que ses
+performances se sont rapprochées du niveau de référence au niveau humain
+dans le <a href="https://super.gluebenchmark.com/leaderboard/">SuperGLUE
+leaderboard</a>.</p>
+<!-- raw HTML omitted -->
+<p><em>&ldquo;Le modèle linguistique T5 (Text-To-Text Transfer Transformer) de Google a établi un nouveau record et se rapproche beaucoup de l&rsquo;humain
+sur le benchmark SuperGLUE.&quot;</em></p>
+<p>Code:</p>
+<p><a href="https://t.co/01qZWrxbqS">https://github.com/google-research/text-to-text-transfer-transformer</a></p>
+<blockquote>
+<p>IMAGE</p>
+</blockquote>
+<p>C&rsquo;est remarquable car les tâches de NLP dans SuperGLUE sont conçues pour
+être faciles pour les humains mais difficiles pour les machines.</p>
+<p>Google a récemment publié <a href="https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html">un résumé</a>
+avec tous les détails du model pour les personnes moins familières des
+articles sur la recherche.</p>
+<p>Leur idée principale était d&rsquo;essayer toutes les idées populaires de la NLP sur un nouvel ensemble de données de formation massive qu&rsquo;ils appellent C4 (<a href="https://www.tensorflow.org/datasets/catalog/c4">Colossal Clean Crawled Corpus</a>).</p>
+<p>Je sais, les chercheurs en IA aiment s'amuser à nommer leurs inventions.</p>
+<p>Utilisons un autre transformers pipeline pour résumer le même texte, mais cette fois en utilisant T5 comme modèle sous-jacent.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+t5_summarizer <span style="color:#333">=</span> pipeline(<span style="background-color:#fff0f0">&#34;summarization&#34;</span>, model<span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;t5-base&#34;</span>, tokenizer<span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;t5-base&#34;</span>)
+
+summary <span style="color:#333">=</span> t5_summarizer(TEXT_TO_SUMMARIZE, min_length<span style="color:#333">=</span><span style="color:#00d;font-weight:bold">50</span>, max_length<span style="color:#333">=</span><span style="color:#00d;font-weight:bold">250</span>)
+
+</code></pre></div><p>Voici le texte résumé.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+[
+  {
+    <span style="background-color:#fff0f0">&#34;summary_text&#34;</span>: <span style="background-color:#fff0f0">&#34;in total, barrientos has been married 10 times, with nine of her marriages occurring between 1999 and 2002 . she is believed to still be married to four men, and at one time, she was married to eight men at once .&#34;</span>
+  }
+]
+
+
+</code></pre></div><p>Ce résumé est également de très grande qualité.</p>
+<p>Mais j&rsquo;ai décidé d'essayer le modèle T5, le plus large, qui est également disponible sous forme de pipeline, pour voir si la qualité pouvait être améliorée.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+t5_summarizer_larger <span style="color:#333">=</span> pipeline(<span style="background-color:#fff0f0">&#34;summarization&#34;</span>, model<span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;t5-large&#34;</span>, tokenizer<span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;t5-large&#34;</span>)
+
+</code></pre></div><p>Je n'ai pas du tout été déçu.</p>
+<p>Un résumé vraiment impressionnant !</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">[
+  {
+    <span style="background-color:#fff0f0">&#39;summary_text&#39;</span>: <span style="background-color:#fff0f0">&#39;Liana barrientos has been married 10 times . nine of her marriages occurred between 1999 and 2002 . she is believed to still be married to four men, and at one time, she was married to eight men at once .&#39;</span>
+  }
+]
+
+</code></pre></div><h2 id="présentation-des-cloud-fonctions"><strong>Présentation des Cloud Fonctions</strong></h2>
+<p>Maintenant que nous disposons d'un code capable de résumer efficacement
+le contenu d'une page, il nous faut un moyen simple de l'exploiter
+sous forme d'API.</p>
+<p>Dans un article précédent, j'ai utilisé le service
+<a href="https://uber.github.io/ludwig/user_guide/#serve">Ludwig</a>,
+mais comme nous n'utilisons pas Ludwig ici, nous allons adopter une approche différente : les <a href="https://cloud.google.com/functions">Cloud Functions</a>.</p>
+<p>Les fonctions &ldquo;cloud&rdquo; &amp; équivalences &quot;serverless&quot; sont sans doute le moyen le plus simple d'obtenir du code côté serveur pour du déploiement.</p>
+<p>On les appelle &ldquo;serverless&rdquo; parce qu&rsquo;il n'est pas nécessaire de mettre à disposition des serveurs web ou des VM chez hébergeurs.</p>
+<p>Elles simplifient considérablement l&rsquo;expérience de déploiement,nous allons le voir.</p>
+<p><strong>Déploiement d&rsquo;une fonction Cloud &ldquo;Hello World&rdquo;</strong></p>
+<p>Nous n'avons pas besoin de quitter Google Colab pour déployer notre
+premier test.</p>
+<p>Tout d'abord, connectez-vous à votre compte &ldquo;Google Compute&rdquo;.</p>
+<pre><code>  colab$ !gcloud auth login \--no-launch-browser
+</code></pre><p>Ensuite, mettez en place un projet par défaut.</p>
+<pre><code>  colab$ !gcloud config set project project-name
+</code></pre><p>Nous allons écrire notre fonction de test dans un fichier nommé main.py</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#333">%%</span>writefile main<span style="color:#333">.</span>py
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06b;font-weight:bold">hello_get</span>(request):
+    <span style="background-color:#fff0f0">&#34;&#34;&#34;HTTP Cloud Function.
+</span><span style="background-color:#fff0f0">    Args:
+</span><span style="background-color:#fff0f0">        request (flask.Request): The request object.
+</span><span style="background-color:#fff0f0">    Returns:
+</span><span style="background-color:#fff0f0">        The response text, or any set of values that can be turned into a
+</span><span style="background-color:#fff0f0">        Response object using `make_response`
+</span><span style="background-color:#fff0f0">        .
+</span><span style="background-color:#fff0f0">    &#34;&#34;&#34;</span>
+    <span style="color:#080;font-weight:bold">return</span> <span style="background-color:#fff0f0">&#39;Hello World!&#39;</span>
+
+</code></pre></div><p>Nous pouvons déployer cette fonction à l'aide de cette commande.</p>
+<pre><code>colab $ !gcloud functions deploy hello_get --runtime python37 --trigger-http --allow-unauthenticated
+</code></pre><p>Après quelques minutes, nous obtenons les détails de notre nouveau
+service API.</p>
+<pre><code>
+availableMemoryMb: 256
+entryPoint: hello_get
+httpsTrigger:
+url: https://xxx.cloudfunctions.net/hello_get
+ingressSettings: ALLOW_ALL
+labels:
+deployment-tool: cli-gcloud
+name: projects/xxx/locations/us-central1/functions/hello_get
+runtime: python37
+serviceAccountEmail: xxxx
+sourceUploadUrl: xxxx
+status: ACTIVE
+timeout: 60s
+updateTime: '2020-04-06T16:33:03.951Z'
+versionId: '8'
+
+</code></pre><p>C&rsquo;est tout !</p>
+<p>Nous n&rsquo;avons pas eu besoin de mettre en place de VM &amp; co.</p>
+<p>Nous pouvons le tester en ouvrant l&rsquo;URL fournie et en obtenant le texte &ldquo;Hello World !&rdquo; comme réponse dans le navigateur.</p>
+<p><strong>Déployer notre cloud fonction</strong></p>
+<p>En théorie, nous devrions être capables d&rsquo;envelopper notre pipeline de text transformers dans une fonction et de suivre les mêmes étapes pour déployer un service API.</p>
+<p>Cependant, j&rsquo;ai dû surmonter plusieurs difficultés pour que cela fonctionne.</p>
+<p>Notre premier (et plus difficile) problème a été l&rsquo;installation de la bibliothèque transformers pour commencer.</p>
+<p>Heureusement, il est simple d&rsquo;installer des paquets tiers à utiliser dans les Python-based Cloud Functions.</p>
+<p>Il vous suffit de créer une fichier standard
+<a href="https://pip.readthedocs.io/en/1.1/requirements.html">requirements.txt</a>
+comme ça:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#333">%%</span>writefile requirements<span style="color:#333">.</span>txt\
+transformers<span style="color:#333">==</span><span style="color:#60e;font-weight:bold">2.8</span><span style="color:#333">.</span><span style="color:#00d;font-weight:bold">0</span>
+
+</code></pre></div><hr>
+<p>Malheureusement, ça échoue car transformers nécessite pour fonctionner de Pytorch ou de Tensorflow.</p>
+<p>Ils sont tous deux installés par défaut dans Google Colab, mais doivent être spécifiés dans l&rsquo;environnement Cloud Functions.</p>
+<p>Par défaut, transformers utilise Pytorch, et lorsque je l&rsquo;ai mis en priorité, ça a retourné une erreur qui m'a conduit à ce thread utile de <a href="https://stackoverflow.com/questions/55449313/google-cloud-function-python-3-7-requirements-txt-makes-deploy-fail">Stack Overflow</a>.]</p>
+<p>Je l&rsquo;ai fait fonctionner avec ce fichier requirement.txt mis à jour.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"> 
+<span style="color:#333">%%</span>writefile requirements<span style="color:#333">.</span>txt
+
+https:<span style="color:#333">//</span>download<span style="color:#333">.</span>pytorch<span style="color:#333">.</span>org<span style="color:#333">/</span>whl<span style="color:#333">/</span>cpu<span style="color:#333">/</span>torch<span style="color:#333">-</span><span style="color:#60e;font-weight:bold">1.0</span><span style="color:#333">.</span><span style="color:#60e;font-weight:bold">1.</span>post2<span style="color:#333">-</span>cp37<span style="color:#333">-</span>cp37m<span style="color:#333">-</span>linux_x86_64<span style="color:#333">.</span>whl
+transformers<span style="color:#333">==</span><span style="color:#60e;font-weight:bold">2.8</span><span style="color:#333">.</span><span style="color:#00d;font-weight:bold">0</span>
+
+</code></pre></div><p>Le défi suivant était l'énorme besoin de mémoire des models et les
+limites des cloud fonctions.</p>
+<p>J'ai d'abord testé des fonctions en utilisant des pipelines plus
+simples comme celui du NER, NER signifie <a href="https://en.wikipedia.org/wiki/Named-entity_recognition">Name Entity
+Recognition</a>.</p>
+<p>Je le teste d&rsquo;abord dans le Colab notebook.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#080;font-weight:bold">from</span> <span style="color:#0e84b5;font-weight:bold">transformers</span> <span style="color:#080;font-weight:bold">import</span> pipeline
+
+nlp_token_class <span style="color:#333">=</span> None
+
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06b;font-weight:bold">ner_get</span>(request):
+  <span style="color:#080;font-weight:bold">global</span> nlp_token_class
+  <span style="color:#888">#run once</span>
+  <span style="color:#080;font-weight:bold">if</span> nlp_token_class <span style="color:#000;font-weight:bold">is</span> None:
+    nlp_token_class <span style="color:#333">=</span> pipeline(<span style="background-color:#fff0f0">&#39;ner&#39;</span>)
+  result <span style="color:#333">=</span> nlp_token_class(<span style="background-color:#fff0f0">&#39;Hugging Face is a French company based in New-York.&#39;</span>)
+  <span style="color:#080;font-weight:bold">return</span> result
+
+</code></pre></div><p>Voici le listing détaillé des réponses .</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+[{<span style="background-color:#fff0f0">&#39;entity&#39;</span>: <span style="background-color:#fff0f0">&#39;I-ORG&#39;</span>, <span style="background-color:#fff0f0">&#39;score&#39;</span>: <span style="color:#60e;font-weight:bold">0.9970937967300415</span>, <span style="background-color:#fff0f0">&#39;word&#39;</span>: <span style="background-color:#fff0f0">&#39;Hu&#39;</span>},
+{<span style="background-color:#fff0f0">&#39;entity&#39;</span>: <span style="background-color:#fff0f0">&#39;I-ORG&#39;</span>, <span style="background-color:#fff0f0">&#39;score&#39;</span>: <span style="color:#60e;font-weight:bold">0.9345749020576477</span>, <span style="background-color:#fff0f0">&#39;word&#39;</span>: <span style="background-color:#fff0f0">&#39;##gging&#39;</span>},
+{<span style="background-color:#fff0f0">&#39;entity&#39;</span>: <span style="background-color:#fff0f0">&#39;I-ORG&#39;</span>, <span style="background-color:#fff0f0">&#39;score&#39;</span>: <span style="color:#60e;font-weight:bold">0.9787060022354126</span>, <span style="background-color:#fff0f0">&#39;word&#39;</span>: <span style="background-color:#fff0f0">&#39;Face&#39;</span>},
+{<span style="background-color:#fff0f0">&#39;entity&#39;</span>: <span style="background-color:#fff0f0">&#39;I-MISC&#39;</span>, <span style="background-color:#fff0f0">&#39;score&#39;</span>: <span style="color:#60e;font-weight:bold">0.9981995820999146</span>, <span style="background-color:#fff0f0">&#39;word&#39;</span>: <span style="background-color:#fff0f0">&#39;French&#39;</span>},
+{<span style="background-color:#fff0f0">&#39;entity&#39;</span>: <span style="background-color:#fff0f0">&#39;I-LOC&#39;</span>, <span style="background-color:#fff0f0">&#39;score&#39;</span>: <span style="color:#60e;font-weight:bold">0.9983047246932983</span>, <span style="background-color:#fff0f0">&#39;word&#39;</span>: <span style="background-color:#fff0f0">&#39;New&#39;</span>},
+{<span style="background-color:#fff0f0">&#39;entity&#39;</span>: <span style="background-color:#fff0f0">&#39;I-LOC&#39;</span>, <span style="background-color:#fff0f0">&#39;score&#39;</span>: <span style="color:#60e;font-weight:bold">0.8913459181785583</span>, <span style="background-color:#fff0f0">&#39;word&#39;</span>: <span style="background-color:#fff0f0">&#39;-&#39;</span>},
+{<span style="background-color:#fff0f0">&#39;entity&#39;</span>: <span style="background-color:#fff0f0">&#39;I-LOC&#39;</span>, <span style="background-color:#fff0f0">&#39;score&#39;</span>: <span style="color:#60e;font-weight:bold">0.9979523420333862</span>, <span style="background-color:#fff0f0">&#39;word&#39;</span>: <span style="background-color:#fff0f0">&#39;York&#39;</span>}]
+
+</code></pre></div><p>Ensuite, je peux simplement ajouter un %%writefile main.py pour créer un fichier Python que je vais utiliser pour déployer la fonction.</p>
+<p>Quand j’ai regardé les logs pour savoir pourquoi les appels API avaient échoué, j&rsquo;ai vu que le besoin en mémoire était un gros problème.</p>
+<p>Mais heureusement, vous pouvez facilement outrepasser la limite par défaut de 250M et augmenter le délai d&rsquo;exécution en utilisant cette commande.</p>
+<pre><code>colab $ !gcloud functions deploy ner_get --memory 2GiB --timeout 540 --runtime python37 --trigger-http --allow-unauthenticated
+</code></pre><p>Je précise que la mémoire doit être configurée sur 2 Go et que le délai d&rsquo;exécution est de 9 minutes.
+Ce qui doit faciliter au téléchargement initial du modèle qui fait plusieurs gigaoctets.</p>
+<p>Ma technique pour accélérer les appels successifs d’une même fonction Cloud, c’est la mise en cache du modèle téléchargé. en mémoire à l&rsquo;aide d&rsquo;une variable globale et à vérifier si elle existe avant de recréer le pipeline.</p>
+<p>Après avoir testé les fonctions BART et T5 et réglé un petit modèle T5 qui correspond bien aux exigences de mémoire et de délai d&rsquo;attente des fonctions Cloud.
+Voici le code de cette fonction.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#333">%%</span>writefile main<span style="color:#333">.</span>py
+<span style="color:#080;font-weight:bold">from</span> <span style="color:#0e84b5;font-weight:bold">transformers</span> <span style="color:#080;font-weight:bold">import</span> pipeline
+
+nlp_t5 <span style="color:#333">=</span> None
+
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06b;font-weight:bold">t5_get</span>(request):
+  <span style="color:#080;font-weight:bold">global</span> nlp_t5
+  <span style="color:#888">#run once</span>
+  <span style="color:#080;font-weight:bold">if</span> nlp_t5 <span style="color:#000;font-weight:bold">is</span> None:
+    nlp_t5 <span style="color:#333">=</span> pipeline(<span style="background-color:#fff0f0">&#39;summarization&#39;</span>, model<span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;t5-small&#34;</span>, tokenizer<span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;t5-small&#34;</span>)
+
+  TEXT_TO_SUMMARIZE <span style="color:#333">=</span> <span style="background-color:#fff0f0">&#34;&#34;&#34; 
+</span><span style="background-color:#fff0f0">  New York (CNN)When Liana Barrientos was 23 years old, she got married in Westchester County, New York... 
+</span><span style="background-color:#fff0f0">  &#34;&#34;&#34;</span>
+  result <span style="color:#333">=</span> nlp_t5(TEXT_TO_SUMMARIZE)
+  <span style="color:#080;font-weight:bold">return</span> result[<span style="color:#00d;font-weight:bold">0</span>][<span style="background-color:#fff0f0">&#34;summary_text&#34;</span>]
+</code></pre></div><p>Et voici le code pour la déployer :</p>
+<pre><code>colab $ !gcloud functions deploy t5_get --memory 2GiB --timeout 540 --runtime python37 --trigger-http --allow-unauthenticated
+</code></pre><p>Le problème avec cette fonction c’est que le texte à résumer est codé en dur.</p>
+<p>Mais nous pouvons facilement corriger cela avec les modifications suivantes.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#333">%%</span>writefile main<span style="color:#333">.</span>py
+
+<span style="color:#080;font-weight:bold">from</span> <span style="color:#0e84b5;font-weight:bold">transformers</span> <span style="color:#080;font-weight:bold">import</span> pipeline
+nlp_t5 <span style="color:#333">=</span> None
+
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06b;font-weight:bold">t5_post</span>(request):
+  <span style="color:#080;font-weight:bold">global</span> nlp_t5
+  <span style="color:#888">#run once</span>
+  <span style="color:#080;font-weight:bold">if</span> nlp_t5 <span style="color:#000;font-weight:bold">is</span> None:
+    <span style="color:#888">#small model to avoid memory issue</span>
+
+    nlp_t5 <span style="color:#333">=</span> pipeline(<span style="background-color:#fff0f0">&#39;summarization&#39;</span>, model<span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;t5-small&#34;</span>, tokenizer<span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;t5-small&#34;</span>)
+
+  <span style="color:#888">#Get text to summarize from POST request</span>
+  content_type <span style="color:#333">=</span> request<span style="color:#333">.</span>headers[<span style="background-color:#fff0f0">&#39;content-type&#39;</span>]
+  <span style="color:#080;font-weight:bold">if</span> content_type <span style="color:#333">==</span> <span style="background-color:#fff0f0">&#39;application/x-www-form-urlencoded&#39;</span>:
+      text <span style="color:#333">=</span> request<span style="color:#333">.</span>form<span style="color:#333">.</span>get(<span style="background-color:#fff0f0">&#39;text&#39;</span>)
+      result <span style="color:#333">=</span> nlp_t5(text)
+      <span style="color:#080;font-weight:bold">return</span> result[<span style="color:#00d;font-weight:bold">0</span>][<span style="background-color:#fff0f0">&#34;summary_text&#34;</span>]
+  <span style="color:#080;font-weight:bold">else</span>:
+      <span style="color:#080;font-weight:bold">raise</span> <span style="color:#f00;font-weight:bold">ValueError</span>(<span style="background-color:#fff0f0">&#34;Unknown content type: {}&#34;</span><span style="color:#333">.</span>format(content_type))
+
+  <span style="color:#080;font-weight:bold">return</span> <span style="background-color:#fff0f0">&#34;Failure&#34;</span>
+</code></pre></div><p>Je m&rsquo;assure simplement que le type de contenu est form url-encoded, et je lis le paramètre texte à partir des données du formulaire.</p>
+<p>Je peux facilement tester cette fonction dans Colab en utilisant le code suivant.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#080;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">requests</span>
+url <span style="color:#333">=</span> <span style="background-color:#fff0f0">&#34;https://xxx.cloudfunctions.net/hello_post&#34;</span>
+data <span style="color:#333">=</span> {<span style="background-color:#fff0f0">&#34;text&#34;</span>: text[:<span style="color:#00d;font-weight:bold">100</span>]}
+
+requests<span style="color:#333">.</span>post(url, data)<span style="color:#333">.</span>text
+</code></pre></div><p>Comme tout fonctionne comme prévu, je fais en sorte que cela fonctionne aussi dans Google Sheets.
+Faire un call de notre service de synthèse de texte depuis Google Sheets Apps Script donne vraiment de super pouvoirs à Google Sheets.</p>
+<p>J&rsquo;ai pu apporter des modifications mineures à la fonction que j&rsquo;ai créée pour la rendre utilisable pour la synthèse de texte.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#080;font-weight:bold">function</span> getSummary(text){
+  payload <span style="color:#333">=</span> <span style="background-color:#fff0f0">`text=</span><span style="background-color:#eee">${</span>text<span style="background-color:#eee">}</span><span style="background-color:#fff0f0">`</span>;
+  payload <span style="color:#333">=</span> <span style="color:#007020">encodeURI</span>(payload);
+  console.log(payload);
+
+  <span style="color:#080;font-weight:bold">var</span> url <span style="color:#333">=</span> <span style="background-color:#fff0f0">&#34;https://xxx.cloudfunctions.net/t5_post&#34;</span>;
+  
+   <span style="color:#080;font-weight:bold">var</span> options <span style="color:#333">=</span> {
+    <span style="background-color:#fff0f0">&#34;method&#34;</span> <span style="color:#333">:</span> <span style="background-color:#fff0f0">&#34;POST&#34;</span>,
+    <span style="background-color:#fff0f0">&#34;contentType&#34;</span> <span style="color:#333">:</span> <span style="background-color:#fff0f0">&#34;application/x-www-form-urlencoded&#34;</span>,
+    <span style="background-color:#fff0f0">&#34;payload&#34;</span> <span style="color:#333">:</span> payload,
+    <span style="background-color:#fff0f0">&#39;muteHttpExceptions&#39;</span><span style="color:#333">:</span> <span style="color:#080;font-weight:bold">true</span> 
+  };
+        
+  <span style="color:#080;font-weight:bold">var</span> response <span style="color:#333">=</span> UrlFetchApp.fetch(url, options);
+  <span style="color:#080;font-weight:bold">var</span> result <span style="color:#333">=</span> response.getContentText();
+  console.log(result);
+  <span style="color:#080;font-weight:bold">return</span> result;
+  
+}
+</code></pre></div><p>C&rsquo;est tout.</p>
+<hr>
+<p>J&rsquo;ai changé le nom de la variable d&rsquo;entrée et l&rsquo;URL de l&rsquo;API.</p>
+<p>Le reste est identique à ce dont j&rsquo;ai besoin pour soumettre une demande POST .</p>
+<p>Nous effectuons des tests et vérifions les logs de la console pour nous assurer que tout fonctionne comme prévu.
+C&rsquo;est le cas.</p>
+<p>L&rsquo;une des grandes limites des Apps Script est que les fonctions personnalisées ne peuvent pas s&rsquo;exécuter pendant plus de 30 secondes.</p>
+<p>En pratique, cela signifie que je peux résumer un texte s&rsquo;il comporte moins de 1 200 caractères, alors qu&rsquo;en Colab/Python, j&rsquo;ai testé des articles complets comportant plus de 10 000 caractères.</p>
+<p>Une autre approche qui devrait mieux fonctionner pour les textes plus longs est de mettre à jour le Google Sheet à partir d’un code Python.</p>
+<h2 id="scraper-le-contenu-des-pages-depuis-google-sheets">Scraper le contenu des pages depuis Google Sheets</h2>
+<p>Voici quelques exemples de l&rsquo;exécution du code dans classeur.</p>
+<p><img src="../../images/other/titres-et-metadescriptions-2.jpg" alt="image"></p>
+<p>Maintenant que nous sommes en mesure de résumer le contenu des textes, voyons comment nous pouvons l&rsquo;extraire directement des pages web publiques.</p>
+<p>Google Sheets comprend à cet effet une fonction puissante appelée IMPORTXML.</p>
+<p>Il nous suffit de fournir l&rsquo;URL et un sélecteur XPath qui identifie le contenu que nous voulons extraire.
+Voici le code pour extraire le contenu d&rsquo;une page Wikipédia.</p>
+<pre><code>=IMPORTXML(&quot;https://en.wikipedia.org/wiki/Moon_landing&quot;, &quot;//div/text()&quot;)
+
+</code></pre><p>J&rsquo;ai utilisé un sélecteur générique pour capturer tout le texte à l&rsquo;intérieur des DIV.</p>
+<p>N&rsquo;hésitez pas à jouer avec différents sélecteurs qui correspondent au contenu de votre page cible.</p>
+<p>Bien que nous puissions obtenir le contenu de la page, il se répartit sur plusieurs lignes. Nous pouvons corriger cela avec une autre fonction, TEXTJOIN.</p>
+<pre><code>=TEXTJOIN(&quot; &quot;, TRUE, IMPORTXML(&quot;https://en.wikipedia.org/wiki/Moon_landing&quot;, &quot;//div/text()&quot;))
+</code></pre><h3 id="indexation-rapide-de-nos-nouvelles-méta-descriptions-et-titres-dans-bing">Indexation rapide de nos nouvelles méta descriptions et titres dans Bing</h3>
+<p>Alors, comment savoir si ces nouvelles metas sont plus performantes que celles écrites manuellement ou par rapport à l&rsquo;absence totale de méta-données ?</p>
+<p>Un moyen sûr d&rsquo;apprendre est d&rsquo;effectuer un test en direct.
+Dans ce cas, il est essentiel d&rsquo;indexer rapidement nos modifications.</p>
+<p>(article futur dessus prévu)</p>
+<p>Cette approche nous limite à quelques centaines de pages.
+Une meilleure alternative est d&rsquo;utiliser l&rsquo;incroyable API d&rsquo;indexation rapide de Bing, car nous pouvons demander l&rsquo;indexation de 10 000 URL !</p>
+<h3 id="cest-pas-génial-">C&rsquo;est pas génial ?</h3>
+<p>Comme nous serions principalement intéressés par la mesure du CTR, notre hypothèse est que si nous obtenons une CTR plus élevée dans Bing, la même chose se produira probablement dans Google et d&rsquo;autres moteurs de recherche.</p>
+<!-- raw HTML omitted -->
+<p>“Un service permettant aux éditeurs d&rsquo;obtenir des URL instantanément indexées dans Bing et de commencer réellement à les classer en quelques minutes mérite d&rsquo;être envisagé. C&rsquo;est comme de l&rsquo;argent gratuit, pourquoi personne ne le prendrait ?”</p>
+<p>Je suis d&rsquo;accord avec Roger. Voici le code pour le faire.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"> 
+api_key <span style="color:#333">=</span> <span style="background-color:#fff0f0">&#34;xxx&#34;</span> <span style="color:#888"># Get your own API key from this URL https://www.bing.com/webmaster/home/api</span>
+
+<span style="color:#080;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">requests</span>
+
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06b;font-weight:bold">submit_to_bing</span>(request):
+
+  <span style="color:#080;font-weight:bold">global</span> api_key
+  
+   a1<span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;https://ssl.bing.com/&#34;</span>
+   a2 <span style="color:#333">=</span>f<span style="background-color:#fff0f0">&#34;webmaster/api.svc/json/SubmitUrlbatch?apikey={api_key}&#34;</span>
+   api_url <span style="color:#333">=</span> a1 <span style="color:#333">+</span> a2
+
+
+  <span style="color:#080;font-weight:bold">print</span>(api_url)
+
+  <span style="color:#888">#Replace for your site </span>
+  url_list <span style="color:#333">=</span> [
+      <span style="background-color:#fff0f0">&#34;https://www.domain.com/page1.html&#34;</span>,
+<span style="background-color:#fff0f0">&#34;https://www.domain.com/page2.html&#34;</span>]
+
+  data <span style="color:#333">=</span> {
+    <span style="background-color:#fff0f0">&#34;siteUrl&#34;</span>: <span style="background-color:#fff0f0">&#34;http://www.domain.com&#34;</span>,
+    <span style="background-color:#fff0f0">&#34;urlList&#34;</span>: url_list
+    }
+
+  r <span style="color:#333">=</span> requests<span style="color:#333">.</span>post(api_url, json<span style="color:#333">=</span>data)
+  <span style="color:#080;font-weight:bold">if</span> r<span style="color:#333">.</span>status_code <span style="color:#333">==</span> <span style="color:#00d;font-weight:bold">200</span>:
+    <span style="color:#080;font-weight:bold">return</span> r<span style="color:#333">.</span>json()
+  <span style="color:#080;font-weight:bold">else</span>:
+    <span style="color:#080;font-weight:bold">return</span> r<span style="color:#333">.</span>status_code
+</code></pre></div><p>Si la demande est acceptée, vous devez vous attendre à cette réponse.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">{<span style="background-color:#fff0f0">&#39;d&#39;</span>: None}
+</code></pre></div><p>Nous pouvons ensuite créer une autre fonction Cloud en l&rsquo;ajoutant à notre fichier main.py et en utilisant la commande deploy comme auparavant</p>
+<h3 id="tester-nos-métas-générées-dans-cloudfare">Tester nos métas générées dans Cloudfare</h3>
+<p>Enfin, si votre site utilise le CDN Cloudflare, vous pouvez utiliser l&rsquo;application RankSense pour exécuter ces changements à titre expérimental avant de les déployer sur le site.</p>
+<p>Il vous suffit de copier l&rsquo;URL et les colonnes de résumé de texte dans une nouvelle feuille Google et de l&rsquo;importer dans l&rsquo;outil.</p>
+<p><img src="../../images/other/titres-et-metadescriptions-3.gif" alt="image"></p>
+<p>Lorsque vous publiez le test, vous pouvez choisir de programmer le changement et de spécifier une URL webhook.
+Une URL webhook permet aux applications et aux services de se parler dans le cadre de flux de travail automatisés.</p>
+<p><img src="../../images/other/titres-et-metadescriptions-4.jpg" alt="image"></p>
+<p>Copiez et collez l&rsquo;URL de la fonction d&rsquo;indexation de Bing dans le cloud. RankSense l&rsquo;appellera automatiquement 15 minutes après que les changements se soient propagés dans Cloudflare.</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2>Rejoignez notre newsletter</h2>
+        <p class="text-light px-md-5 py-4 border-left border-right border-primary">
+          Pour rester informé des découvertes techniques toutes les semaines on à besoin de votre email pour vous recontacter</p>
+          <form action="POST" id="myForm" name="submit-to-google-sheet" class="row justify-content-center">
+            <div class="input-group col-md-8">
+              <input name="firstName" placeholder="Ton prénom" autocomplete="name">
+              <input name="email" type="email" class="form-control" placeholder="Ton adresse email" autocomplete="email">
+              <div class="input-group-append">
+                <button class="input-group-text btn btn-primary" type="submit">Abonne Toi !</button>
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <a href=""><img src="images/logo.png" alt="Growth Hacking Experiments"></a>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Me contacter</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark" href="tel:0124857985320"><i
+                class="ti-mobile mr-3 text-primary"></i>0124857985320</a></li>
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Paris, France</li>
+          <li class="mb-3"><a class="text-dark" href="mailto:growthackingexperiments%0a@gmail.com"><i
+                class="ti-email mr-3 text-primary"></i>growthackingexperiments
+@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Réseaux Sociaux</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.facebook.com/groups/growthhaking/">facebook</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/MikaelMonjour/">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="#">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/GrowtHackingExperiments">github</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.linkedin.com/in/mikaelmonjour/">linkedin</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/growth-hacking">Growth hacking</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/growth-marketing">Growth marketing</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/seo">Seo</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="blog">Blog</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2020 <a href="https://www.eduba.school/">Eduba</a> MIT (Non au contenu dupliqué !) |
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="plugins/jQuery/jquery.min.js"></script>
+
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="plugins/slick/slick.min.js"></script>
+
+<script src="plugins/venobox/venobox.min.js"></script>
+
+<script src="plugins/search/fuse.min.js"></script>
+
+<script src="plugins/search/mark.js"></script>
+
+<script src="plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'Your ID', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyzhW0rYMvqgDLz-YdcZwBYIr_r4fjHkelTIGv3Y8ZtyXREsJjP/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+
+    document.getElementById("myForm").reset();
+  })
+
+</script></body>
+</html>

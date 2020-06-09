@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Growth Hacking Experiments</title>
+    <link>/tags/javascript/</link>
+    <description>Recent content in Javascript on Growth Hacking Experiments</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 09 Jun 2020 19:01:52 +0200</lastBuildDate>
+    
+	<atom:link href="/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Envoyer un formulaire html directement à Google Sheets</title>
+      <link>/blog/soumettre-un-formulaire-html-a-google-sheet/</link>
+      <pubDate>Tue, 09 Jun 2020 19:01:52 +0200</pubDate>
+      
+      <guid>/blog/soumettre-un-formulaire-html-a-google-sheet/</guid>
+      <description>Comment créer un formulaire HTML qui stocke les données du formulaire soumis dans Google Sheets en utilisant le JavaScript (ES6), Google Apps Script, Fetch and FormData.</description>
+    </item>
+    
+  </channel>
+</rss>

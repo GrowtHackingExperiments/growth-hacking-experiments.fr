@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Growth Hacking Experiments</title>
+    <link>/</link>
+    <description>Recent content on Growth Hacking Experiments</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 09 Jun 2020 19:01:52 +0200</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Envoyer un formulaire html directement à Google Sheets</title>
+      <link>/blog/soumettre-un-formulaire-html-a-google-sheet/</link>
+      <pubDate>Tue, 09 Jun 2020 19:01:52 +0200</pubDate>
+      
+      <guid>/blog/soumettre-un-formulaire-html-a-google-sheet/</guid>
+      <description>Comment créer un formulaire HTML qui stocke les données du formulaire soumis dans Google Sheets en utilisant le JavaScript (ES6), Google Apps Script, Fetch and FormData.</description>
+    </item>
+    
+    <item>
+      <title>C&#39;est quoi le T-shape marketing ?</title>
+      <link>/blog/c-est-quoi-le-t-shape-marketing/</link>
+      <pubDate>Fri, 29 May 2020 10:07:47 +0600</pubDate>
+      
+      <guid>/blog/c-est-quoi-le-t-shape-marketing/</guid>
+      <description>Le modèle du Marketeur T-shaped Comment découvrir la spécialisation en Marketing Digital faite pour vous.</description>
+    </item>
+    
+    <item>
+      <title>Comment utiliser les REGEX pour le SEO et l’extraction de données</title>
+      <link>/blog/utiliser-les-regex-pour-le-seo-et-l-extraction-de-donnees/</link>
+      <pubDate>Fri, 29 May 2020 10:07:47 +0600</pubDate>
+      
+      <guid>/blog/utiliser-les-regex-pour-le-seo-et-l-extraction-de-donnees/</guid>
+      <description>Le marketing digital dispose d’une pléthore d’outils pour rechercher et extraire des données.</description>
+    </item>
+    
+    <item>
+      <title>SEO : Automatiser la création de titres et de méta-descriptions</title>
+      <link>/blog/automatiser-la-creation-de-titres-et-de-meta-descriptions-avec-le-nlu-nlp-et-python/</link>
+      <pubDate>Wed, 29 Apr 2020 10:07:47 +0600</pubDate>
+      
+      <guid>/blog/automatiser-la-creation-de-titres-et-de-meta-descriptions-avec-le-nlu-nlp-et-python/</guid>
+      <description>L&amp;rsquo;article développe sous python et javascript une solution d&amp;rsquo;automatisation de synthèse de texte en prenant en compte des dernieres solutions NLU/NLP.</description>
+    </item>
+    
+  </channel>
+</rss>

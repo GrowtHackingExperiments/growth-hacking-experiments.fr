@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+  <meta charset="utf-8">
+  <title>Growth Hacking Experiments</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Utilise les regex est un bon moyen d&#39;améliorer son SEO, voici un exemple concret avec Screaming frog">
+  <meta name="author" content="Mikael Monjour">
+  <meta name="generator" content="Hugo 0.71.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="images/favicon.png " type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href=""><img class="img-fluid"
+          src="images/logo.png" alt="Growth Hacking Experiments"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/groups/growthhaking/"><i class="ti-facebook"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/MikaelMonjour/"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/GrowtHackingExperiments"><i class="ti-github"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/mikaelmonjour/"><i class="ti-linkedin"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href=""><img class="img-fluid"
+            src="images/logo.png" alt="Growth Hacking Experiments"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="blog">Blog</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="contact">Contact</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Je recherche...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/seo"
+          class="text-primary">S e o</a>
+        
+        <h2>Comment utiliser les REGEX pour le SEO et l’extraction de données</h2>
+        <div class="mb-3 post-meta">
+          <span>By Mikael Monjour</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>29 May 2020</span>
+          
+        </div>
+        
+        <img src="images/post/regex-seo-growth-hacking-experiments.jpg" class="img-fluid w-100 mb-4" alt="Comment utiliser les REGEX pour le SEO et l’extraction de données">
+        
+        <div class="content mb-5">
+          <p>Le marketing digital dispose d’une pléthore d’outils pour rechercher et extraire des données. L’un des plus puissants d’entre eux mais qui reste trop souvent ignoré est l’utilisation des REGEX.</p>
+<p>Consultants SEO, Data analystes, Chercheurs,Community managers et spécialistes du marketing numérique en tout genre négligent parfois l’étendue de la puissance des expressions régulières.</p>
+<p>Cet article définit ce que sont les Regex et leurs utilités lorsqu’elles sont combinées avec certains web crawlers, au travers de cinq cas pratiques.</p>
+<h2 id="les-regex-quest-ce-que-cest">Les REGEX, qu’est ce que c’est?</h2>
+<p>Les Regex (expressions régulières) , sont un outil de pattern matching.</p>
+<p>Elles sont un élément incontournable pour les moteurs de recherche, les logiciels de search &amp; replace, et sont une composante native ou complémentaire de nombreux langages de programmation.</p>
+<p>Combiner la méthode &ldquo;find&rdquo; avec un web crawler est un atout puissant tant pour identifier les erreurs que pour extraire des données.</p>
+<p>Cette fonctionnalité est encore relativement nouvelle dans les outils pour SEO sur le marché.</p>
+<p>L&rsquo;extraction personnalisée en utilisant des regex ( Xpath ou CSSpath), n&rsquo;a été ajoutée à Screaming Frog SEO Spider que dans la version de juillet 2015.</p>
+<p>Jusqu&rsquo;à cette date, SEOTools pour Excel était peut-être l&rsquo;outil le plus accessible pour l&rsquo;extraction par regex - mais seulement lorsqu&rsquo;il était combiné avec un crawler comme Screaming Frog pour collecter d&rsquo;abord les URL à analyser.</p>
+<p>Google Sheets a aussi depuis longtemps la possibilité d&rsquo;utiliser l&rsquo;extraction par Regex mais, comme SEOTools pour Excel, il faut d&rsquo;abord parcourir le site avec un web crawler.</p>
+<p>Après que Screaming Frog ait déployé sa fonction d&rsquo;extraction personnalisée par Regex en 2015, d’autres outils de référencement de niveau &ldquo;entreprise&rdquo; tel que BrightEdge et Conductor ont réagi en ajoutant des fonctions similaires.</p>
+<p>Malgré la présence désormais généralisée de l’extraction de données par Regex, la puissance de cette fonctionnalité est encore largement ignorée par de nombreux professionnels du web.</p>
+<h2 id="comment-apprendre-les-regex-">Comment apprendre les REGEX :</h2>
+<p>Plongeons dans le vif du sujet avec une combinaison de Screaming Frog et d&rsquo;outils comme :</p>
+<ul>
+<li>
+<p><a href="https://regexr.com/">RegExr</a></p>
+</li>
+<li>
+<p><a href="https://regex101.com/">Regular Expressions 101</a></p>
+</li>
+<li>
+<p><a href="https://txt2re.com/">Txt2re</a></p>
+</li>
+<li>
+<p><a href="http://buildregex.com/">Build RegEx</a></p>
+</li>
+</ul>
+<p>Vous pouvez reprendre les cas d&rsquo;utilisation ci-dessous, ou pratiquer sur vos propres projets.</p>
+<p>Cas pratiques avec REGEX :</p>
+<p>Ci dessous quelques exemples d’utilisation des Regex dont vous pouvez vous inspirer en ré-utilisant les formules.</p>
+<h3 id="1-extraire-des-métadonnées-ou-toute-autre-donnée-de-nimporte-quel-site-web">1. Extraire des métadonnées (ou toute autre donnée) de n&rsquo;importe quel site web</h3>
+<p>Regardons le site ESPN.</p>
+<p>Prenons pour l’exemple <a href="https://www.espn.com/nba/story/_/id/22258759/zach-lowe-blake-griffin-trade-future-la-clippers-detroit-pistons">cette histoire</a> sur la star de la NBA Blake Griffin.</p>
+<p>En consultant le code source de cette page, nous localisons un type de métadonnées propice à analyser (des métadonnées similaires se trouvent sur la plupart des grands sites web) :</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{  
+<span style="color:#070">&#34;omniture&#34;</span>: {  
+<span style="color:#070">&#34;columnist&#34;</span>: <span style="background-color:#fff0f0">&#34;lowe_zach&#34;</span>,  
+<span style="color:#070">&#34;league&#34;</span>: <span style="background-color:#fff0f0">&#34;nba&#34;</span>,  
+<span style="color:#070">&#34;countryRegion&#34;</span>: <span style="background-color:#fff0f0">&#34;en-us&#34;</span>,  
+<span style="color:#070">&#34;hier1&#34;</span>: <span style="background-color:#fff0f0">&#34;nba:story&#34;</span>,  
+<span style="color:#070">&#34;section&#34;</span>: <span style="background-color:#fff0f0">&#34;nba&#34;</span>,  
+<span style="color:#070">&#34;source&#34;</span>: <span style="background-color:#fff0f0">&#34;espn.com&#34;</span>,  
+<span style="color:#070">&#34;pageName&#34;</span>: <span style="background-color:#fff0f0">&#34;nba:story&#34;</span>,  
+<span style="color:#070">&#34;storyInfo&#34;</span>: <span style="background-color:#fff0f0">&#34;22258759+zach-lowe-blake-griffin-trade-future-la-clippers-detroit-pistons&#34;</span>,  
+<span style="color:#070">&#34;sections&#34;</span>: <span style="background-color:#fff0f0">&#34;nba:story&#34;</span>,  
+<span style="color:#070">&#34;site&#34;</span>: <span style="background-color:#fff0f0">&#34;espn&#34;</span>,  
+<span style="color:#070">&#34;premium&#34;</span>: <span style="background-color:#fff0f0">&#34;premium-no&#34;</span>,  
+<span style="color:#070">&#34;convrSport&#34;</span>: <span style="background-color:#fff0f0">&#34;basketball&#34;</span>,  
+<span style="color:#070">&#34;pageURL&#34;</span>: <span style="background-color:#fff0f0">&#34;www.espn.com/nba/story/_/id/22258759/zach-lowe-blake-griffin-trade-future-la-clippers-detroit-pistons&#34;</span>,  
+<span style="color:#070">&#34;lang&#34;</span>: <span style="background-color:#fff0f0">&#34;en_us&#34;</span>,  
+<span style="color:#070">&#34;prop35&#34;</span>: <span style="background-color:#fff0f0">&#34;2018-01-30&#34;</span>,  
+<span style="color:#070">&#34;contentType&#34;</span>: <span style="background-color:#fff0f0">&#34;story&#34;</span>,  
+<span style="color:#070">&#34;sport&#34;</span>: <span style="background-color:#fff0f0">&#34;basketball&#34;</span>,  
+<span style="color:#070">&#34;account&#34;</span>: <span style="background-color:#fff0f0">&#34;wdgespcom&#34;</span>,  
+<span style="color:#070">&#34;siteType&#34;</span>: <span style="background-color:#fff0f0">&#34;full&#34;</span>,  
+<span style="color:#070">&#34;prop58&#34;</span>: <span style="background-color:#fff0f0">&#34;isIndex=false&#34;</span>  
+}
+</code></pre></div><p>Le but étant d’identifier un modèle de données récurrent et intéressant à analyser. Une fois identifié, nous pouvons commencer à construire la regex pour extraire ces données.</p>
+<p>Copions simplement le code ainsi que quelques lignes avant et après dans regexr.com pour commencer à travailler sur quelques formules :</p>
+<img class="no-follow-image"
+     src="https://lh6.googleusercontent.com/Vjvqr7FfL_y_z9jzadA6j4wAOCwnVfpU88SZjl4tO7eOD8DiTusD8Q-9NOOAU0pgsaXI6VjtFL67aD_6c2lFhMw70xXVXdZhIC7v2t4kjWnvYj6mIo83Ax_R0gtNELC2jXOsZkX1"
+     alt="Regex for SEO"
+     rel="nofollow"
+     style="width:750px;">
+<p>Supposons que j’audit le site d&rsquo;ESPN et que je veux obtenir une liste de tous leurs articles avec auteurs et dates. Il me suffit de lancer le crawler avec ces 2 expressions régulières en les incluant dans le filtre d&rsquo;extraction personnalisée de Screaming Frog:</p>
+<pre><code>&quot;columnist&quot;:&quot;(.*?)&quot;
+</code></pre><pre><code>&quot;prop35&quot;:&quot;(.*?)&quot;
+</code></pre><img class="no-follow-image"
+     src="https://lh3.googleusercontent.com/EdPkiqNtW5B_NsdNmODsHmeX2zJI209HQfjn3gf-hykUGFEcYtPRla7e5wqDE7ErtopEGpNs-lo3uUhPQIcuVAKTrqfDj5zFOQqUCxRml8CnvX_eJzb7UUZGNDrFv8kTpfIE_iTV"
+     alt="Crawling ESPN.com"
+     rel="nofollow"
+     style="width:750px;">
+<p>Et ça marche ! Je peux parcourir une liste d&rsquo;URL d&rsquo;ESPN.com, ou parcourir tout le site, et en extraire les informations qui seront essentielles pour mon audit de contenu.</p>
+<h3 id="2-trademark-enforcement--droit-des-marques">2. Trademark Enforcement ( Droit des marques)</h3>
+<p>Le <a href="https://en.wikipedia.org/wiki/Registered_trademark_symbol">symbole d’une marque déposée</a> (®) est un symbole qui doit généralement apparaître juste après le nom de la marque déposée, dès sa première utilisation sur une page web.</p>
+<p>Prenons par exemple &ldquo;<a href="https://www.bmc.com/blogs/itil-4/">ITIL</a>®&rdquo; - dont le sigle signifie IT Infrastructure Library, une marque déposée appartenant à <a href="https://www.axelos.com/">Axelos</a>.</p>
+<p>De nombreux sites web qui parlent d&rsquo;ITIL omettent d&rsquo;inclure le symbole de la marque déposée lorsqu&rsquo;ils font référence à ce concept.</p>
+<p>L&rsquo;un de ces sites, Cherwell.com, parle d&rsquo;ITIL mais n&rsquo;inclut pas toujours le symbole de la marque déposée.</p>
+<p>En utilisant deux Regex basiques, nous pouvons facilement trouver les URL dans lesquelles Cherwell devrait envisager d&rsquo;ajouter le symbole de marque déposée :</p>
+<img class="no-follow-image"
+     src="https://lh6.googleusercontent.com/vRWjNVFR8b4TCjUUr9X_X0yghv-pWYHkNAIkJ23UGWp6tFXmxOrqwpB60XOI7qD_490sMZ_JBsM794MFuakF27F-lDKPwA0GGVtE1EwsIh5qJeM2asqAPLfvyn27NUlV3HPPdCu8"
+     alt="Crawling for Trademark"
+     rel="nofollow"
+     style="width:750px;">
+<p>Dans ce cas, nous avons repéré quatre URL qui comportent le bon symbole - et beaucoup d&rsquo;autres qui ne le comportent pas.</p>
+<p>Cet exemple montre à quel point une simple chaîne de regex peut être puissante.</p>
+<p>Ci dessous les Regex utilisées :</p>
+<pre><code>ITIL®
+</code></pre><pre><code>ITIL(?!®)
+</code></pre><h3 id="3-changer-le-nom-des-produits-ou-rechercher-une-morphologie-de-caractères-incorrecte">3. Changer le nom des produits ou rechercher une morphologie de caractères incorrecte</h3>
+<p>Par exemple en 2017, IBM a officiellement changé le nom de &ldquo;DB2&rdquo; en &ldquo;Db2&rdquo;</p>
+<p>Le caractère &ldquo;b&rdquo; est devenu minuscule.</p>
+<p>Le nom DB2 a été utilisé pour la première fois en 1983, il y a donc probablement d&rsquo;innombrables endroits sur le web qui gardent le nom incorrect de DB2.</p>
+<p>Ne pas utiliser les regex et s&rsquo;adapter à une morphologie changeante, c&rsquo;est subir des erreurs fréquentes ou de ne pas trouver un mot ou ou le nom d&rsquo;un produit qui change.</p>
+<p>En utilisant l&rsquo;expression régulière suivante, nous sommes capables d&rsquo;identifier toutes les instances incorrectes de &ldquo;DB2&rdquo;, &ldquo;db2&rdquo; ou &ldquo;dB2&rdquo; :</p>
+<p>La Regex :</p>
+<pre><code>(db|DB|dB)2
+</code></pre><img class="no-follow-image"
+     src="https://lh3.googleusercontent.com/njeqc7_0oV-FlQP4qTAIbbXTG3DWZTohjA963zsOi9fPY4R5z9FL-BpF907cfCKDOcMO1y1NyQpqjtf-4eLH6sO1bWd2r-nx_trnNx8qNXFY8cW-zxwJKbWdVJGGyCQF5xzzpOnp"
+     alt="Crawling for Capitalization and Casing"
+     rel="nofollow"
+     style="width:750px;">
+<h3 id="4-trouver-des-fichiers-téléchargeable-sur-les-sites-communautaires">4. Trouver des fichiers téléchargeable sur les sites communautaires</h3>
+<p>Jive Software est peut-être la plate-forme communautaire N°1 pour les entreprises. Elle est utilisée par des sociétés comme Cisco, ServiceNow, Adobe, BMC Software, McAfe, Wiley et bien d&rsquo;autres grandes entreprises.</p>
+<p>Vous pouvez trouver d&rsquo;autres exemples d&rsquo;entreprises utilisant la plateforme Jive avec une requête Google, tel que :</p>
+<p><a href="https://www.google.com/search?q=inurl:hosted.jivesoftware.com">https://www.google.com/search?q=inurl:hosted.jivesoftware.com</a></p>
+<p>Jive, tout comme WordPress ou d&rsquo;autres plateformes de publication, présente certains patterns propre à ce genre de structure.</p>
+<p>Par exemple tous les téléchargements vers la plate-forme, lorsqu&rsquo;ils sont visualisés à partir du document ou du blog sur lequel ils sont téléchargés, comprennent le lien suivant :</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#070">a</span> <span style="color:#00c">class</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;j-attachment-icon&#34;</span>
+<span style="color:#00c">href</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;/servlet/JiveServlet/download/xxx/filename.ext&#34;</span>&gt;
+</code></pre></div><p>Par conséquent, nous pouvons utiliser la Regex suivante pour extraire toutes les URL de pièces jointes de n&rsquo;importe quel site communautaire hébergé sur Jive :</p>
+<pre><code>&quot;j-attachment-icon&quot; href=&quot;(.*?)&quot;
+</code></pre><p>Pour voir comment ça fonctionne, voici les résultats d&rsquo;un bref scan du site  <a href="https://community.servicenow.com">https://community.servicenow.com</a> :</p>
+<img class="no-follow-image"
+     src="https://lh6.googleusercontent.com/_4JY8eZugQAFYsUyCs7zQjySb6PXjE_dRhdfiP5_RIgcqRctlC40JQA0frMS9I_tvt4Qb_IN__zU8e8_dh4akDyJ6XxbaPROWLJ1DHDy0OCpVWK_0jorqTroiuv0J6EyuFZK7nyB"
+     alt="Crawling for download links"
+     rel="nofollow"
+     style="width:750px;">
+<h3 id="5--contrôler-lorthographe">5.  Contrôler l’orthographe</h3>
+<p>Fort heureusement, la plupart des éditeurs vérifient l&rsquo;orthographe dans Word &amp; autres avant de publier leurs contenu, mais les fautes d&rsquo;orthographe les plus courantes passent encore inaperçues.</p>
+<p>Pas d’inquiétudes :</p>
+<p>Regex + Screaming Frog peut vous aider à identifier les mots couramment mal orthographiés.</p>
+<p>Le seul inconvénient est que vous devez connaître/produire la liste de ces mots.</p>
+<p>Certains mots sont susceptible d’êtres mal orthographié dans n’importe quelle langue.</p>
+<p>Il existe également des mots spécifiques à un secteur ou à une marque qui doivent être inclus dans la liste des fautes d&rsquo;orthographe.</p>
+<p>Voici une simple Regex pour faire matcher les mots anglais les plus couramment mal orthographiés aux États-Unis :</p>
+<pre><code>(?i)accomodate | accomodation | acheive | accross | agressive | agression | apparantly | appearence | arguement | assasination | basicly | begining | beleive | belive | bizzare | buisness | calender | Carribean | cemetary | chauffer | collegue | comming | commitee | completly | concious | curiousity | definately | dilemna | dissapear | dissapoint | ecstacy | embarass | enviroment | existance | Farenheit | familar | finaly | florescent | foriegn | forseeable | fourty | foward | freind | futher | jist | glamourous | goverment | gaurd | happend | harrass | harrassment | honourary | humourous | idiosyncracy | immediatly | incidently | independant | interupt | irresistable | knowlege | liase | liason | lollypop | millenium | millenia | Neandertal | neccessary | noticable | ocassion | occassion | occured | occuring | occurance | occurence | pavillion | persistant | pharoah | peice | politican | Portugese | posession | prefered | prefering | propoganda | publically | realy | recieve | refered | refering | religous | rember | remeber | resistence | sence | seperate | seige | succesful | supercede | suprise | tatoo | tendancy | therefor | threshhold | tommorow | tommorrow | tounge | truely | unforseen | unfortunatly | untill | wierd | whereever | wich
+</code></pre><p>Utilisons Screaming Frog à nouveau et voyons si nous pouvons localiser une de ces erreurs sur CNN :</p>
+<img class="no-follow-image"
+     src="https://lh4.googleusercontent.com/W3svr7Murr0rVIRgt-ZBiXrf_sE57rtqrY9hvEHpfFWGFam9nIFQubifW1PhmgXftnjujyGGxFhlfSUfKS_xXUH8IRDJLBX_sBSpyTY7HtCT0yANqbMVPQDVSMNbBzyGGeXqYrf_"
+     alt="Spell Check with Regex"
+     rel="nofollow"
+     style="width:750px;">
+<p>En un rien de temps, nous avons déjà repéré une mauvaise orthographe du mot &ldquo;Fahrenheit&rdquo;</p>
+<img class="no-follow-image"
+     src="https://lh4.googleusercontent.com/OcXRbzYtyA2Jwjmmi2HwUmQDccaW3WjC27pfSI1tRoA5n1r5OBAs3hKn7KQ2N7santOVIIUgS7E4uOUd0KNky92TowAnTLBP2PPIydwj0tApH04_CamSb9YSBj6i73mSYOyX23tw"
+     alt="Crawling CNN.com"
+     rel="nofollow"
+     style="width:750px;">
+<h2 id="en-résumé">En résumé</h2>
+<p>On peut trouver des schémas de données partout sur le web. En utilisant les Regex, vous pouvez les localiser et en extraire les données associés.</p>
+<p>Les REGEX ne sont un outil simple à appréhender , mais une fois maîtrisée, vous allez trouver des utilisations infinies pour cette technologie omniprésente sur le web. C&rsquo;est dans cet esprit que Jamie Zawinski a déclaré :</p>
+<p>“Certaines personnes, lorsqu&rsquo;elles sont confrontées à un problème, pensent &ldquo;Je sais, je vais utiliser des expressions régulières&rdquo;. Maintenant, ils ont deux problèmes.”</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2>Rejoignez notre newsletter</h2>
+        <p class="text-light px-md-5 py-4 border-left border-right border-primary">
+          Pour rester informé des découvertes techniques toutes les semaines on à besoin de votre email pour vous recontacter</p>
+          <form action="POST" id="myForm" name="submit-to-google-sheet" class="row justify-content-center">
+            <div class="input-group col-md-8">
+              <input name="firstName" placeholder="Ton prénom" autocomplete="name">
+              <input name="email" type="email" class="form-control" placeholder="Ton adresse email" autocomplete="email">
+              <div class="input-group-append">
+                <button class="input-group-text btn btn-primary" type="submit">Abonne Toi !</button>
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <a href=""><img src="images/logo.png" alt="Growth Hacking Experiments"></a>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Me contacter</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark" href="tel:0124857985320"><i
+                class="ti-mobile mr-3 text-primary"></i>0124857985320</a></li>
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Paris, France</li>
+          <li class="mb-3"><a class="text-dark" href="mailto:growthackingexperiments%0a@gmail.com"><i
+                class="ti-email mr-3 text-primary"></i>growthackingexperiments
+@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Réseaux Sociaux</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.facebook.com/groups/growthhaking/">facebook</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/MikaelMonjour/">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="#">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/GrowtHackingExperiments">github</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.linkedin.com/in/mikaelmonjour/">linkedin</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/growth-hacking">Growth hacking</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/growth-marketing">Growth marketing</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/seo">Seo</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="blog">Blog</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2020 <a href="https://www.eduba.school/">Eduba</a> MIT (Non au contenu dupliqué !) |
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="plugins/jQuery/jquery.min.js"></script>
+
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="plugins/slick/slick.min.js"></script>
+
+<script src="plugins/venobox/venobox.min.js"></script>
+
+<script src="plugins/search/fuse.min.js"></script>
+
+<script src="plugins/search/mark.js"></script>
+
+<script src="plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'Your ID', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyzhW0rYMvqgDLz-YdcZwBYIr_r4fjHkelTIGv3Y8ZtyXREsJjP/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+
+    document.getElementById("myForm").reset();
+  })
+
+</script></body>
+</html>

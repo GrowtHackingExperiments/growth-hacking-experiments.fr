@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SEO on Growth Hacking Experiments</title>
+    <link>/tags/seo/</link>
+    <description>Recent content in SEO on Growth Hacking Experiments</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 29 Apr 2020 10:07:47 +0600</lastBuildDate>
+    
+	<atom:link href="/tags/seo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SEO : Automatiser la création de titres et de méta-descriptions</title>
+      <link>/blog/automatiser-la-creation-de-titres-et-de-meta-descriptions-avec-le-nlu-nlp-et-python/</link>
+      <pubDate>Wed, 29 Apr 2020 10:07:47 +0600</pubDate>
+      
+      <guid>/blog/automatiser-la-creation-de-titres-et-de-meta-descriptions-avec-le-nlu-nlp-et-python/</guid>
+      <description>L&amp;rsquo;article développe sous python et javascript une solution d&amp;rsquo;automatisation de synthèse de texte en prenant en compte des dernieres solutions NLU/NLP.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+  <meta charset="utf-8">
+  <title>Growth Hacking Experiments</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Gagnez du temps en automatisant la recolte d&#39;adresses emails">
+  <meta name="author" content="Mikael Monjour">
+  <meta name="generator" content="Hugo 0.71.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="images/favicon.png " type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href=""><img class="img-fluid"
+          src="images/logo.png" alt="Growth Hacking Experiments"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/groups/growthhaking/"><i class="ti-facebook"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/MikaelMonjour/"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/GrowtHackingExperiments"><i class="ti-github"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/mikaelmonjour/"><i class="ti-linkedin"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href=""><img class="img-fluid"
+            src="images/logo.png" alt="Growth Hacking Experiments"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="blog">Blog</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="contact">Contact</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Je recherche...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/growth-hacking"
+          class="text-primary">Growth hacking</a>
+        
+        <h2>Envoyer un formulaire html directement à Google Sheets</h2>
+        <div class="mb-3 post-meta">
+          <span>By Mikael Monjour</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>09 June 2020</span>
+          
+        </div>
+        
+        <img src="images/post/envoyer-un-formulaire-html-a-google-sheet.jpg" class="img-fluid w-100 mb-4" alt="Envoyer un formulaire html directement à Google Sheets">
+        
+        <div class="content mb-5">
+          <h4 id="comment-créer-un-formulaire-html-qui-stocke-les-données-du-formulaire-soumis-dans-google-sheets-en-utilisant-le-javascript-es6-google-apps-scripthttpsdevelopersgooglecomapps-script-fetchhttpsdevelopermozillaorgen-usdocswebapifetch_api-and-formdatahttpsdevelopermozillaorgen-usdocswebapiformdata">Comment créer un formulaire HTML qui stocke les données du formulaire soumis dans Google Sheets en utilisant le JavaScript (ES6), <a href="https://developers.google.com/apps-script/">Google Apps Script</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">Fetch</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData">FormData</a>.</h4>
+<h2 id="1-créer-une-nouvelle-fiche-google">1. Créer une nouvelle fiche Google</h2>
+<ul>
+<li>D&rsquo;abord, allez sur <a href="https://docs.google.com/spreadsheets">Google Sheets</a> et <code>lancez une nouvelle feuille de calcul</code> avec le modèle <code>vide</code>.</li>
+<li>Renommez-le <code>Email Subscribers</code>. Ou peu importe, ça n&rsquo;a pas d&rsquo;importance.</li>
+<li>Mettez les en-têtes suivants dans la première ligne :</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">A</th>
+<th align="center">B</th>
+<th align="center">C</th>
+<th align="center">&hellip;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td align="center">timestamp</td>
+<td align="center">email</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Pour apprendre comment ajouter des champs de saisie supplémentaires, <a href="#7-adding-additional-form-data">section 7 ci-dessous</a>.</p>
+</blockquote>
+<h2 id="2-créer-un-script-google-apps">2. Créer un script Google Apps</h2>
+<ul>
+<li>Cliquez sur &ldquo;Outils &gt; Editeur de script&hellip;&quot;, ce qui devrait ouvrir un nouvel onglet.</li>
+<li>Renommez-le <code>Submit Form to Google Sheets</code>.</li>
+</ul>
+<blockquote>
+<p>Assurez-vous d&rsquo;attendre qu&rsquo;il enregistre et mette à jour le titre avant d&rsquo;éditer le script.</p>
+</blockquote>
+<ul>
+<li>Maintenant, supprimez le bloc <code>function myFunction() {}</code> dans l&rsquo;onglet <code>Code.gs</code>.</li>
+<li>Collez le script suivant à sa place et &ldquo;Fichier &gt; Enregistrer&rdquo; :</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#080;font-weight:bold">var</span> sheetName <span style="color:#333">=</span> <span style="background-color:#fff0f0">&#39;Sheet1&#39;</span> <span style="color:#888">//Attention au nom il est souvent traduit
+</span><span style="color:#888"></span><span style="color:#080;font-weight:bold">var</span> scriptProp <span style="color:#333">=</span> PropertiesService.getScriptProperties()
+
+<span style="color:#080;font-weight:bold">function</span> intialSetup () {
+  <span style="color:#080;font-weight:bold">var</span> activeSpreadsheet <span style="color:#333">=</span> SpreadsheetApp.getActiveSpreadsheet()
+  scriptProp.setProperty(<span style="background-color:#fff0f0">&#39;key&#39;</span>, activeSpreadsheet.getId())
+}
+
+<span style="color:#080;font-weight:bold">function</span> doPost (e) {
+  <span style="color:#080;font-weight:bold">var</span> lock <span style="color:#333">=</span> LockService.getScriptLock()
+  lock.tryLock(<span style="color:#00d;font-weight:bold">10000</span>)
+
+  <span style="color:#080;font-weight:bold">try</span> {
+    <span style="color:#080;font-weight:bold">var</span> doc <span style="color:#333">=</span> SpreadsheetApp.openById(scriptProp.getProperty(<span style="background-color:#fff0f0">&#39;key&#39;</span>))
+    <span style="color:#080;font-weight:bold">var</span> sheet <span style="color:#333">=</span> doc.getSheetByName(sheetName)
+
+    <span style="color:#080;font-weight:bold">var</span> headers <span style="color:#333">=</span> sheet.getRange(<span style="color:#00d;font-weight:bold">1</span>, <span style="color:#00d;font-weight:bold">1</span>, <span style="color:#00d;font-weight:bold">1</span>, sheet.getLastColumn()).getValues()[<span style="color:#00d;font-weight:bold">0</span>]
+    <span style="color:#080;font-weight:bold">var</span> nextRow <span style="color:#333">=</span> sheet.getLastRow() <span style="color:#333">+</span> <span style="color:#00d;font-weight:bold">1</span>
+
+    <span style="color:#080;font-weight:bold">var</span> newRow <span style="color:#333">=</span> headers.map(<span style="color:#080;font-weight:bold">function</span>(header) {
+      <span style="color:#080;font-weight:bold">return</span> header <span style="color:#333">===</span> <span style="background-color:#fff0f0">&#39;timestamp&#39;</span> <span style="color:#333">?</span> <span style="color:#080;font-weight:bold">new</span> <span style="color:#007020">Date</span>() <span style="color:#333">:</span> e.parameter[header]
+    })
+
+    sheet.getRange(nextRow, <span style="color:#00d;font-weight:bold">1</span>, <span style="color:#00d;font-weight:bold">1</span>, newRow.length).setValues([newRow])
+
+    <span style="color:#080;font-weight:bold">return</span> ContentService
+      .createTextOutput(JSON.stringify({ <span style="background-color:#fff0f0">&#39;result&#39;</span><span style="color:#333">:</span> <span style="background-color:#fff0f0">&#39;success&#39;</span>, <span style="background-color:#fff0f0">&#39;row&#39;</span><span style="color:#333">:</span> nextRow }))
+      .setMimeType(ContentService.MimeType.JSON)
+  }
+
+  <span style="color:#080;font-weight:bold">catch</span> (e) {
+    <span style="color:#080;font-weight:bold">return</span> ContentService
+      .createTextOutput(JSON.stringify({ <span style="background-color:#fff0f0">&#39;result&#39;</span><span style="color:#333">:</span> <span style="background-color:#fff0f0">&#39;error&#39;</span>, <span style="background-color:#fff0f0">&#39;error&#39;</span><span style="color:#333">:</span> e }))
+      .setMimeType(ContentService.MimeType.JSON)
+  }
+
+  <span style="color:#080;font-weight:bold">finally</span> {
+    lock.releaseLock()
+  }
+}
+</code></pre></div><blockquote>
+<p>Si vous voulez mieux comprendre ce que fait ce script, consultez le fichier dans le repo pour une explication détaillée.</p>
+</blockquote>
+<p><a href="https://github.com/jamiewilson/form-to-google-sheets/blob/master/form-script-commented.js"><code>form-script-commented.js</code></a></p>
+<h2 id="3-exécuter-la-fonction-de-configuration">3. Exécuter la fonction de configuration</h2>
+<ul>
+<li>Ensuite, allez à <code>Exécuter &gt; Exécuter la fonction &gt; Configuration initiale</code> pour exécuter cette fonction.</li>
+<li>Dans la boîte de dialogue <code>Autorisation requise</code>, cliquez sur <code>Réviser les autorisations</code>.</li>
+<li>Connectez-vous ou choisissez le compte Google associé à ce projet.</li>
+<li>Vous devriez voir un dialogue qui dit <code>Hi {votre nom}</code>, <code>Soumettre le formulaire à Google Sheets veut</code>&hellip;</li>
+</ul>
+<blockquote>
+<p>Cliquez sur <code>Autoriser</code>.</p>
+</blockquote>
+<h2 id="4-ajouter-un-nouveau-déclencheur-de-projet">4. Ajouter un nouveau déclencheur de projet</h2>
+<ul>
+<li>Cliquez sur <code>Editer &gt; Déclencheurs du projet en cours</code>.</li>
+<li>Dans la boîte de dialogue, cliquez sur <code>Aucun déclencheur n'est configuré</code>. Cliquez ici pour en ajouter un maintenant.</li>
+<li>Dans les listes déroulantes, sélectionnez <code>doPost</code>.</li>
+<li>Définissez les champs d&rsquo;événements à <code>De la feuille de calcul</code> et <code>Sur l'envoi du formulaire</code>.</li>
+<li>Cliquez ensuite sur <code>Sauvegarder</code>.</li>
+</ul>
+<h2 id="5-publier-le-projet-sous-forme-dapplication-web">5. Publier le projet sous forme d&rsquo;application web</h2>
+<ul>
+<li>Cliquez sur <code>Publish &gt; Deploy as web app...</code>.</li>
+<li>Définissez <code>Version du projet</code> sur <code>Nouveau</code> et mettez <code>version initiale</code> dans le champ de saisie ci-dessous.</li>
+<li>Laissez <code>Exécuter l'application en tant que:</code> défini sur <code>Me(your@address.com)</code>.</li>
+<li>Pour <code>Qui a accès à l'application:</code> sélectionnez <code>Anyone, even anonymous</code>.</li>
+<li>Cliquez sur <code>Déployer</code>.</li>
+<li>Dans le popup, copiez l&rsquo;URL de l&rsquo;application Web actuelle à partir de la boîte de dialogue.</li>
+<li>Et cliquez sur <code>OK</code>.</li>
+</ul>
+<blockquote>
+<p><strong>IMPORTANT!</strong> Si vous avez un domaine personnalisé avec Gmail, vous devez peut-être cliquer sur &ldquo;OK&rdquo;, rafraîchir la page, puis aller sur <code>Publier &gt; Déployer en tant qu'application Web...</code> pour obtenir l&rsquo;URL de l&rsquo;application Web appropriée. Cela devrait ressembler à quelque chose comme <code>https://script.google.com/a/yourdomain.com/macros/s/XXXX…</code>.</p>
+</blockquote>
+<h2 id="6-saisissez-lurl-de-votre-application-web">6. Saisissez l&rsquo;URL de votre application web</h2>
+<p>Ouvrez le fichier nommé <code>index.html</code>. Sur la ligne 12, remplacez <code>&lt;SCRIPT URL&gt;</code> par l&rsquo;url de votre script :</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#333">&lt;</span>form name<span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;submit-to-google-sheet&#34;</span><span style="color:#333">&gt;</span>
+  <span style="color:#333">&lt;</span>input name<span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;email&#34;</span> type<span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;email&#34;</span> placeholder<span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;Email&#34;</span> required<span style="color:#333">&gt;</span>
+  <span style="color:#333">&lt;</span>button type<span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;submit&#34;</span><span style="color:#333">&gt;</span>Send<span style="color:#333">&lt;</span><span style="color:#f00;background-color:#faa">/button&gt;</span>
+<span style="color:#333">&lt;</span><span style="color:#f00;background-color:#faa">/form&gt;</span>
+
+<span style="color:#333">&lt;</span>script<span style="color:#333">&gt;</span>
+  <span style="color:#080;font-weight:bold">const</span> scriptURL <span style="color:#333">=</span> <span style="background-color:#fff0f0">&#39;&lt;SCRIPT URL&gt;&#39;</span>
+  <span style="color:#080;font-weight:bold">const</span> form <span style="color:#333">=</span> <span style="color:#007020">document</span>.forms[<span style="background-color:#fff0f0">&#39;submit-to-google-sheet&#39;</span>]
+
+  form.addEventListener(<span style="background-color:#fff0f0">&#39;submit&#39;</span>, e =&gt; {
+    e.preventDefault()
+    fetch(scriptURL, { method<span style="color:#333">:</span> <span style="background-color:#fff0f0">&#39;POST&#39;</span>, body<span style="color:#333">:</span> <span style="color:#080;font-weight:bold">new</span> FormData(form)})
+      .then(response =&gt; console.log(<span style="background-color:#fff0f0">&#39;Success!&#39;</span>, response))
+      .<span style="color:#080;font-weight:bold">catch</span>(error =&gt; console.error(<span style="background-color:#fff0f0">&#39;Error!&#39;</span>, error.message))
+  })
+<span style="color:#333">&lt;</span><span style="color:#f00;background-color:#faa">/script&gt;</span>
+</code></pre></div><p>Comme vous pouvez le voir, ce script utilise l&rsquo;API [Fetch] (<a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API),">https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API),</a> un mécanisme assez nouveau basé sur des promesses pour effectuer des requêtes sur le web. Il effectue une requête &ldquo;POST&rdquo; sur l&rsquo;URL de votre script et utilise <a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData">FormData</a> pour transmettre nos données comme paramètres d&rsquo;URL.</p>
+<p>Comme Fetch et FormData ne sont pas entièrement pris en charge, vous voudrez probablement inclure leurs polyfills respectifs. <a href="#8-Polyfills-connexes">Voir section #8</a>.</p>
+<blockquote>
+<p>Les balises <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> et <code>body</code> font partie d&rsquo;une poignée de balises optionnelles, mais comme les <a href="https://www.w3.org/TR/2011/WD-html5-20110525/syntax.html#optional-tags">règles relatives à l&rsquo;analyse d&rsquo;une page par le navigateur sont assez compliquées</a>, vous ne voudrez probablement pas les omettre sur les vrais sites web.</p>
+</blockquote>
+<h2 id="7-ajout-de-données-supplémentaires-dans-le-formulaire">7. Ajout de données supplémentaires dans le formulaire</h2>
+<p>Pour saisir des données supplémentaires, il vous suffit de créer de nouvelles colonnes dont les titres correspondent exactement aux valeurs <code>nom</code> de vos entrées de formulaire. Par exemple, si vous voulez ajouter des entrées de prénom et de nom, vous leur donnerez des valeurs de <code>nom</code> comme ça :</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#070">form</span> <span style="color:#00c">name</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;submit-to-google-sheet&#34;</span>&gt;
+  &lt;<span style="color:#070">input</span> <span style="color:#00c">name</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;email&#34;</span> <span style="color:#00c">type</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;email&#34;</span> <span style="color:#00c">placeholder</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;Email&#34;</span> <span style="color:#00c">required</span>&gt;
+  &lt;<span style="color:#070">input</span> <span style="color:#00c">name</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;firstName&#34;</span> <span style="color:#00c">type</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;text&#34;</span> <span style="color:#00c">placeholder</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;First Name&#34;</span>&gt;
+  &lt;<span style="color:#070">input</span> <span style="color:#00c">name</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;lastName&#34;</span> <span style="color:#00c">type</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;text&#34;</span> <span style="color:#00c">placeholder</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;Last Name&#34;</span>&gt;
+  &lt;<span style="color:#070">button</span> <span style="color:#00c">type</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;submit&#34;</span>&gt;Send&lt;/<span style="color:#070">button</span>&gt;
+&lt;/<span style="color:#070">form</span>&gt;
+</code></pre></div><p>Créez ensuite de nouveaux en-têtes avec les valeurs exactes, sensibles à la casse, des <code>noms</code> :</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">A</th>
+<th align="center">B</th>
+<th align="center">C</th>
+<th align="center">D</th>
+<th align="center">&hellip;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td align="center">timestamp</td>
+<td align="center">email</td>
+<td align="center">firstName</td>
+<td align="center">lastName</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="8-polyfills-connexes">8. Polyfills connexes</h2>
+<p>Certains de ces éléments ne sont pas encore totalement pris en charge par les navigateurs ou ne fonctionnent pas sur les anciens. Voici quelques options de polyfill à utiliser pour une meilleure prise en charge.</p>
+<ul>
+<li><a href="https://github.com/taylorhakes/promise-polyfill">Promise Polyfill</a></li>
+<li><a href="https://github.com/github/fetch">Fetch Polyfill</a></li>
+<li><a href="https://github.com/jimmywarting/FormData">FormData Polyfill</a></li>
+</ul>
+<p>Étant donné que la polyfill FormData est publiée sous forme de paquet Node et doit être compilée pour que les navigateurs puissent fonctionner, une bonne option pour les inclure consiste à utiliser <a href="https://wzrd.in/">Browserify&rsquo;s CDN appelé wzrd.in</a>. Ce service compile, miniaturise et met à notre disposition la dernière version de ces scripts.</p>
+<p>Vous devez vous assurer de leur chargement avant que le script principal ne traite la soumission du formulaire, par exemple</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#070">script</span> <span style="color:#00c">src</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;https://wzrd.in/standalone/formdata-polyfill&#34;</span>&gt;&lt;/<span style="color:#070">script</span>&gt;
+&lt;<span style="color:#070">script</span> <span style="color:#00c">src</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;https://wzrd.in/standalone/promise-polyfill@latest&#34;</span>&gt;&lt;/<span style="color:#070">script</span>&gt;
+&lt;<span style="color:#070">script</span> <span style="color:#00c">src</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#34;https://wzrd.in/standalone/whatwg-fetch@latest&#34;</span>&gt;&lt;/<span style="color:#070">script</span>&gt;
+
+&lt;<span style="color:#070">script</span>&gt;
+  <span style="color:#080;font-weight:bold">const</span> scriptURL <span style="color:#333">=</span> <span style="background-color:#fff0f0">&#39;&lt;SCRIPT URL&gt;&#39;</span>
+  <span style="color:#080;font-weight:bold">const</span> form <span style="color:#333">=</span> <span style="color:#007020">document</span>.forms[<span style="background-color:#fff0f0">&#39;submit-to-google-sheet&#39;</span>]
+  ...
+&lt;/<span style="color:#070">script</span>&gt;
+</code></pre></div><h2 id="vous-avez-des-commentaires-des-demandes-ou-des-problèmes-">Vous avez des commentaires, des demandes ou des problèmes ?</h2>
+<p>Veuillez créer une issue (<a href="https://github.com/jamiewilson/form-to-google-sheet/issues)">https://github.com/jamiewilson/form-to-google-sheet/issues)</a>. Les relations publiques sont les bienvenues, mais n&rsquo;hésitez pas à me faire part de vos idées avant de vous lancer dans un travail important. Je vous remercie !</p>
+<h4 id="des-aricles-similaires">Des aricles similaires</h4>
+<ul>
+<li><a href="https://mashe.hawksey.info/2011/10/google-spreadsheets-as-a-database-insert-with-apps-script-form-postget-submit-method/">Google Spreadsheets as a Database – INSERT with Apps Script form POST/GET submit method</a></li>
+<li><a href="http://railsrescue.com/blog/2015-05-28-step-by-step-setup-to-send-form-data-to-google-sheets/">Step by step setup to send form data to Google Sheets</a></li>
+<li><a href="https://gist.github.com/willpatera/ee41ae374d3c9839c2d6">Google Sheet Form Post</a></li>
+<li><a href="https://medium.com/@dmccoy/how-to-submit-an-html-form-to-google-sheets-without-google-forms-b833952cc175">How to Submit an HTML Form to Google Sheets…without Google Forms</a></li>
+<li><a href="https://github.com/dwyl/html-form-send-email-via-google-script-without-server">Send Email from a Static HTML Form using Google Apps Mail!</a></li>
+</ul>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2>Rejoignez notre newsletter</h2>
+        <p class="text-light px-md-5 py-4 border-left border-right border-primary">
+          Pour rester informé des découvertes techniques toutes les semaines on à besoin de votre email pour vous recontacter</p>
+          <form action="POST" id="myForm" name="submit-to-google-sheet" class="row justify-content-center">
+            <div class="input-group col-md-8">
+              <input name="firstName" placeholder="Ton prénom" autocomplete="name">
+              <input name="email" type="email" class="form-control" placeholder="Ton adresse email" autocomplete="email">
+              <div class="input-group-append">
+                <button class="input-group-text btn btn-primary" type="submit">Abonne Toi !</button>
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <a href=""><img src="images/logo.png" alt="Growth Hacking Experiments"></a>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Me contacter</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark" href="tel:0124857985320"><i
+                class="ti-mobile mr-3 text-primary"></i>0124857985320</a></li>
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Paris, France</li>
+          <li class="mb-3"><a class="text-dark" href="mailto:growthackingexperiments%0a@gmail.com"><i
+                class="ti-email mr-3 text-primary"></i>growthackingexperiments
+@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Réseaux Sociaux</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.facebook.com/groups/growthhaking/">facebook</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/MikaelMonjour/">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="#">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/GrowtHackingExperiments">github</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.linkedin.com/in/mikaelmonjour/">linkedin</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/growth-hacking">Growth hacking</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/growth-marketing">Growth marketing</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/seo">Seo</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="blog">Blog</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2020 <a href="https://www.eduba.school/">Eduba</a> MIT (Non au contenu dupliqué !) |
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="plugins/jQuery/jquery.min.js"></script>
+
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="plugins/slick/slick.min.js"></script>
+
+<script src="plugins/venobox/venobox.min.js"></script>
+
+<script src="plugins/search/fuse.min.js"></script>
+
+<script src="plugins/search/mark.js"></script>
+
+<script src="plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'Your ID', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyzhW0rYMvqgDLz-YdcZwBYIr_r4fjHkelTIGv3Y8ZtyXREsJjP/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+
+    document.getElementById("myForm").reset();
+  })
+
+</script></body>
+</html>

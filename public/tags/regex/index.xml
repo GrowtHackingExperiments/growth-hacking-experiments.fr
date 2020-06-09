@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>REGEX on Growth Hacking Experiments</title>
+    <link>/tags/regex/</link>
+    <description>Recent content in REGEX on Growth Hacking Experiments</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 29 May 2020 10:07:47 +0600</lastBuildDate>
+    
+	<atom:link href="/tags/regex/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Comment utiliser les REGEX pour le SEO et l’extraction de données</title>
+      <link>/blog/utiliser-les-regex-pour-le-seo-et-l-extraction-de-donnees/</link>
+      <pubDate>Fri, 29 May 2020 10:07:47 +0600</pubDate>
+      
+      <guid>/blog/utiliser-les-regex-pour-le-seo-et-l-extraction-de-donnees/</guid>
+      <description>Le marketing digital dispose d’une pléthore d’outils pour rechercher et extraire des données.</description>
+    </item>
+    
+  </channel>
+</rss>
