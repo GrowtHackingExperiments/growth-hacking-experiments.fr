@@ -36,15 +36,11 @@
               <div class="g-ytsubscribe" data-channelid="UCHDEq1XZRlsJIcG1VZ7R3uA" data-layout="default" data-count="default">
               </div>
             </div>
-            <form action="POST" name="submit-to-google-sheet" class="">
+            <form action="POST" id="highform" name="submit-to-google-sheet" class="">
               <h5>Inscription à la newsletter (mensuelle):</h5>
-              <div class="input-group">
-                  <input class="form-control" name="firstName" type="hidden" value="">
-                  <input class="form-control" name="email" id="email" type="email" placeholder="lucien@gmail.com" required>
-              </div>
-              <div class="input-group-append">
+                <input class="form-control" name="firstName" placeholder="Ton prénom" value="">
+                <input class="form-control" name="email" id="email" type="email" placeholder="lucien@gmail.com" required>
                 <button type="submit" class="btn btn-outline-dark">Abonne Toi !</button>
-              </div>
             </form>
           {{ .Content }}
         </div>

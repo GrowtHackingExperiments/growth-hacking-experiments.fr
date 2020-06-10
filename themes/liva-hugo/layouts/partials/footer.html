@@ -76,7 +76,7 @@
 </footer>
 
 <script>
-  var indexURL = {{ "index.json" | absURL }}
+  var indexURL = '{{ "index.json" | absURL }}'
 </script>
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
@@ -114,6 +114,7 @@
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
 
+    document.getElementById("highform").reset();
     document.getElementById("myForm").reset();
   })
 
