@@ -293,7 +293,6 @@
     padding: 20px;
     background: $gray;
     border-left: 3px solid $primary-color;
-
     p {
       margin-bottom: 0;
       color: $text-color-dark;
@@ -301,7 +300,10 @@
     }
   }
 
-
+  img{
+    max-width: 100%;
+  }
+  
   pre {
     padding: 10px 20px;
     background: $gray;

@@ -717,3 +717,7 @@ button.bg-primary:hover {
     border-radius: 3px;
     color:rgb(0, 0, 0);
 }
+
+.content img{
+    max-width:100%
+}

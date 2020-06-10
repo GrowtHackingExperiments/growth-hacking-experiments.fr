@@ -147,7 +147,8 @@ body {
 
 img {
     vertical-align: middle;
-    border: 0
+    border: 0;
+    max-width:100%;
 }
 
 a,
@@ -716,4 +717,8 @@ button.bg-primary:hover {
     border: 1px solid #acb9c4;
     border-radius: 3px;
     color:rgb(0, 0, 0);
+}
+
+.content img{
+    max-width: 100%;
 }
