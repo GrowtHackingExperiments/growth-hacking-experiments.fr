@@ -20,6 +20,22 @@
         <img src="{{ .Params.Image | absURL }}" class="img-fluid w-100 mb-4" alt="{{ .Title | markdownify }}">
         {{ end }}
         <div class="content mb-5">
+            <!-- social -->
+            <div class="social">
+              <h5>Partager l'article : </h5>
+              <a href="https://www.facebook.com/groups/growthhaking/">
+                <img src="{{`images/facebook.png` | absURL}}" alt="Facebook" class="img-fluid">
+              </a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}">
+                <img src="{{`images/linkedin.png` | absURL}}" alt="Linkedin" class="img-fluid">
+              </a>
+              <a href="https://twitter.com/intent/tweet?text=Un article démentiel :)&url={{ .Permalink }}&hashtags=#growthhacking">
+                <img src="{{`images/twitter.png` | absURL}}" alt="Twitter" class="img-fluid">
+              </a>
+              <script src="https://apis.google.com/js/platform.js"></script>
+              <div class="g-ytsubscribe" data-channelid="UCHDEq1XZRlsJIcG1VZ7R3uA" data-layout="default" data-count="default">
+              </div>
+            </div>
           {{ .Content }}
         </div>
 
