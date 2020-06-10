@@ -8,7 +8,7 @@
           {{ .Site.Params.newsletter.content | markdownify }}</p>
           <form action="POST" id="myForm" name="submit-to-google-sheet" class="row justify-content-center">
             <div class="input-group col-md-8">
-              <input name="firstName" placeholder="Ton prénom" autocomplete="name">
+              <input name="firstName" class="form-control" placeholder="Ton prénom" autocomplete="name">
               <input name="email" type="email" class="form-control" placeholder="Ton adresse email" autocomplete="email">
               <div class="input-group-append">
                 <button class="input-group-text btn btn-primary" type="submit">Abonne Toi !</button>
