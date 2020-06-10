@@ -150,10 +150,6 @@ img {
     border: 0;
 }
 
-.content img{
-    max-width: 80%;
-}
-
 a,
 a:hover,
 a:focus {
