@@ -91,7 +91,7 @@ home = "Home"
 description = "Growth Hacking Experiments est un blog à destination des marketeurs techniques fans de code et d'automatisation"
 author = "Mikael Monjour"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+googleAnalitycsID = "UA-170765004-1"
 # Contact Information
 mobile = "0124857985320"
 email = "growthackingexperiments\n@gmail.com"
